@@ -552,6 +552,27 @@ export default function AdminDashboard() {
                <Icons.Refresh />
              </button>
 
+             {/* 新增：登陆按钮 */}
+              <button 
+                onClick={() => window.open('https://van.pro-plus.top/dashboard', '_blank')} 
+                style={{
+                  background: '#3b82f6', // 使用蓝色，保持低调且专业
+                  border: 'none', 
+                  padding: '10px 20px', 
+                  borderRadius: '8px', 
+                  color: '#fff', 
+                  cursor: 'pointer', 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  gap: '5px', 
+                  fontWeight: 'bold', 
+                  fontSize: '14px'
+                }} 
+                className="btn-ia"
+              >
+                <span style={{fontSize: '16px'}}>🌱</span> 作品寄售
+              </button>
+
              <button onClick={() => window.open('https://pan.cloudreve.org/xxx', '_blank')} style={{background:'#a855f7', border:'none', padding:'10px 20px', borderRadius:'8px', color:'#fff', cursor:'pointer', display:'flex', alignItems:'center', gap:'5px', fontWeight:'bold', fontSize:'14px'}} className="btn-ia"><Icons.Tutorial /> 教程</button>
              {view === 'list' ? <AnimatedBtn text="发布新内容" onClick={handleCreate} /> : <AnimatedBtn text="返回列表" onClick={() => setView('list')} />}
            </div>
