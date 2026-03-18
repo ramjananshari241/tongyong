@@ -76,7 +76,7 @@ export const ProfileWidget = ({ data }: { data: any }) => {
                 </Link>
 
                 {/* 按钮 2 */}
-                <Link href="/download" className="group/btn relative h-11 md:h-12 w-full rounded-xl overflow-hidden flex items-center justify-center text-[11px] md:text-xs font-bold text-white transition-all hover:brightness-110 active:scale-95 shadow-lg" style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)' }}>
+                <Link href="/tutorial" className="group/btn relative h-11 md:h-12 w-full rounded-xl overflow-hidden flex items-center justify-center text-[11px] md:text-xs font-bold text-white transition-all hover:brightness-110 active:scale-95 shadow-lg" style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)' }}>
                   <div className="relative z-10 flex items-center justify-center">
                     <LinkIcon icon="IoMdCloudDownload" />
                     {/* ✨ 修改点：同上 */}
